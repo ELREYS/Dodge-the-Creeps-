@@ -49,7 +49,7 @@ func start(pos):
 	show()
 	$CollisionShape2D.disabled = false
 
-func _on_Player_body_entered(body: Node) -> void:
+func _on_Player_body_entered(_body: Node) -> void:
 	hide()
 	emit_signal('hit')
 	$CollisionShape2D.set_deferred("disabled",true)
